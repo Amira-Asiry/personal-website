@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أميرة عسيري</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>أميرة عسيري</h1>
+    <p>تخصص: علوم الحاسب</p>
+  </header>
+  <main>
+    <section>
+      <h2>نبذة عني</h2>
+      <p>
+        أنا طالبة جامعية في سنتي الأخيرة ضمن تخصص علوم الحاسب، شغوفة بهندسة البرمجيات وصناعة الحلول التقنية التي تحدث فرقًا فعليًا في حياة المستخدمين. أؤمن بأن البرمجة ليست فقط أداة، بل هي لغة لفهم المشكلات وبناء أنظمة ذكية تعالجها بذكاء ومرونة. أطمح لأن أكون مبرمجة متمكنة، لا تكتفي بتقليد الحلول بل تصنعها، وتعيد تعريف المعايير بلمسة إبداعية واحترافية.
+      </p>
+    </section>
+    <section>
+      <h2>مشاريعي</h2>
+      <ul>
+        <li>
+          <strong>Diamond Oasis:</strong>
+          موقع ويب صغير للتسوق الإلكتروني خاص ببيع الإكسسوارات، تم تصميمه باستخدام HTML وCSS وJavaScript.
+        </li>
+        <li>
+          <strong>Monitor My Health:</strong>
+          مشروع التخرج الجامعي، وهو موقع إلكتروني يعتني بصحة المستخدمين من خلال تتبع بياناتهم الحيوية وتذكيرهم بمواعيد الأدوية. تم تطويره باستخدام HTML وCSS وJavaScript وPython (Flask) وSQLite.
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 أميرة عسيري. جميع الحقوق محفوظة.
+  </footer>
+  <script>
+    const scrollButton = document.createElement('button');
+    scrollButton.textContent = '⬆';
+    scrollButton.style.position = 'fixed';
+    scrollButton.style.bottom = '20px';
+    scrollButton.style.left = '20px';
+    scrollButton.style.padding = '10px';
+    scrollButton.style.border = 'none';
+    scrollButton.style.borderRadius = '50%';
+    scrollButton.style.background = '#2c3e50';
+    scrollButton.style.color = 'white';
+    scrollButton.style.cursor = 'pointer';
+    scrollButton.style.display = 'none';
+    document.body.appendChild(scrollButton);
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollButton.style.display = 'block';
+      } else {
+        scrollButton.style.display = 'none';
+      }
+    });
+
+    scrollButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
